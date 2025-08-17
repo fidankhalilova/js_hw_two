@@ -1,18 +1,19 @@
 // 1. Sətirdə Sözlərin Sayını Tapmaq
 // javascript// Verilmiş sətirdə neçə söz olduğunu tapan funksiya yazın
 
-// function countWords(str) {
-//     var count = 0;
-//     for (let i = 0; i < str.length; i++) {
-//         if (str[i] === ' ') {
-//             count++;
-//         }
-//     }
-//     return count + 1;
-// }
+function countWords(str) {
+    var str = str.trim();
+    var count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === ' ') {
+            count++;
+        }
+    }
+    return count + 1;
+}
 
 // // // Test
-// console.log(countWords("Salam dünya necəsən")); // 3
+console.log(countWords("Salam dünya necəsən")); // 3
 
 
 
